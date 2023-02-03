@@ -1,1 +1,15 @@
-
+<html>
+  <head>
+    <title>圆周率计算</title>
+  </head>
+  <body>
+    <script>
+      var pi = 0;
+      var n = 100;
+      for (var i = 0; i <= n; i++) {
+        pi += (4 / (2 * i + 1) * Math.pow(-1, i));
+      }
+      document.write("The value of pi is " + pi);
+    </script>
+  </body>
+</html>
