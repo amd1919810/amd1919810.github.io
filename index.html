@@ -11,3 +11,20 @@
   <p>可以去附页找找哦~</p>
 
   或者去<a href="//amd1919810.github.io/home-page">小站导航</a>看看
+
+<script src="https://cdn.bootcss.com/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script>
+swal('本站已经更新','\n\n更新塞班讨论区','success'); function AddFavorite(title, url) {
+  try {
+      window.external.addFavorite(url, title);
+  }
+catch (e) {
+     try {
+       window.sidebar.addPanel(title, url,);
+    }
+     catch (e) {
+         alert("抱歉，您所使用的浏览器无法完成此操作。");
+     }
+  }
+}
+</script>
