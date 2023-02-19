@@ -4,15 +4,15 @@ if (time<=6 && time>=0)
 {
 	document.write("<b>凌晨好</b>");
 }
-else if (time<=10 && time>=6)
+else if (time<12 && time>6)
 {
-	document.write("<b>早上好</b>");
+	document.write("<b>上午好</b>");
 }
 else if (time==12)
 {
 	document.write("<b>中午好</b>");
 }
-else if (time>=12 && time<=18)
+else if (time>12 && time<=18)
 {
 	document.write("<b>下午好</b>");
 }
